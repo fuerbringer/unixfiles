@@ -1,0 +1,3 @@
+[submodule "vim/.vim/bundle/elm.vim"]
+	path = vim/.vim/bundle/elm.vim
+	url = https://github.com/lambdatoast/elm.vim.git

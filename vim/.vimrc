@@ -1,7 +1,7 @@
 set nocompatible
 
 " Pathogen
-" execute pathogen#infect()
+execute pathogen#infect()
 set encoding=utf-8
 colorscheme default
 syntax enable
