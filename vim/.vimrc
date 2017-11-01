@@ -48,17 +48,13 @@ set noerrorbells
 set novisualbell
 
 " autocomplete brackets
-ino " ""<left>
-ino ' ''<left>
-ino ( ()<left>
-ino [ []<left>
-ino { {}<left>
+" ino " ""<left>
+" ino ' ''<left>
+" ino ( ()<left>
+" ino [ []<left>
+" ino { {}<left>
 
 map <C-n> :NERDTreeToggle<CR>
-map rp :bn <Bar> w! <Bar> bp<CR>
-map gn :bn<cr>
-map gp :bp<cr>
-map gd :bd<cr>
 
 " I like pain (it's to get rid of bad Vim habits)
 let g:hardtime_default_on = 1
