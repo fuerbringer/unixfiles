@@ -60,12 +60,8 @@ map gn :bn<cr>
 map gp :bp<cr>
 map gd :bd<cr>
 
-" Emmet
-" let g:user_emmet_leader_key='<c-e>'
-
-" Autosave
-"let g:auto_save_write_all_buffers = 1
-"let g:auto_save = 1
+" I like pain (it's to get rid of bad Vim habits)
+let g:hardtime_default_on = 1
 
 " Notes
 " let g:notes_directories = ['/hdd/sync/documents/notes']

@@ -4,3 +4,6 @@
 [submodule "vim/.vim/bundle/vim-pug"]
 	path = vim/.vim/bundle/vim-pug
 	url = https://github.com/digitaltoad/vim-pug.git
+[submodule "vim/.vim/bundle/vim-hardtime"]
+	path = vim/.vim/bundle/vim-hardtime
+	url = https://github.com/takac/vim-hardtime.git
