@@ -7,3 +7,6 @@
 [submodule "vim/.vim/bundle/vim-hardtime"]
 	path = vim/.vim/bundle/vim-hardtime
 	url = https://github.com/takac/vim-hardtime.git
+[submodule "vim/.vim/bundle/ctrlp.vim"]
+	path = vim/.vim/bundle/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git
