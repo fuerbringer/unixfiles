@@ -56,8 +56,10 @@ set novisualbell
 
 map <C-n> :NERDTreeToggle<CR>
 
-" I like pain (it's to get rid of bad Vim habits)
+" I like pain (it's to get rid of some of my bad Vim habits)
 let g:hardtime_default_on = 1
+let g:list_of_normal_keys = ["-", "+", "<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
+let g:list_of_visual_keys = ["-", "+", "<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
 
 " Notes
 " let g:notes_directories = ['/hdd/sync/documents/notes']
