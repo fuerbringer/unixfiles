@@ -2,15 +2,15 @@ set nocompatible
 
 " Pathogen
 execute pathogen#infect()
-set encoding=utf-8
 colorscheme default
+filetype indent on
+filetype plugin on
+set autoread
+set background=dark
+set encoding=utf-8
+set history=100
 syntax enable
 syntax on
-set background=dark
-set history=100
-filetype plugin on
-filetype indent on
-set autoread
 
 nnoremap <C-F1> :if &go=~#'m'<Bar>set go-=m<Bar>else<Bar>set go+=m<Bar>endif<CR>
 nnoremap <C-F2> :if &go=~#'T'<Bar>set go-=T<Bar>else<Bar>set go+=T<Bar>endif<CR>
@@ -46,13 +46,6 @@ set number
 
 set noerrorbells
 set novisualbell
-
-" autocomplete brackets
-" ino " ""<left>
-" ino ' ''<left>
-" ino ( ()<left>
-" ino [ []<left>
-" ino { {}<left>
 
 map <C-n> :NERDTreeToggle<CR>
 

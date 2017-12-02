@@ -1,0 +1,6 @@
+[user]
+	email = severin@protonmail.ch
+	name = fuerbringer
+	signingkey = 557C2E894148E0B4
+[commit]
+	gpgsign = true
