@@ -47,6 +47,12 @@ set number
 set noerrorbells
 set novisualbell
 
+" Temp, backup and undofiles
+set backup
+set backupdir=~/.vim/tempfiles/backup
+set dir=~/.vim/tempfiles/swap
+set undodir=~/.vim/tempfiles/undo
+
 map <C-n> :NERDTreeToggle<CR>
 
 " I like pain (it's to get rid of some of my bad Vim habits)
