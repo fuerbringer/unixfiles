@@ -1,8 +1,11 @@
 [user]
+#  email = severin@protonmail.ch
+#  signingkey = 557C2E894148E0B4
+
   email = severin@protonmail.ch
-  name = Severin Fürbringer
-  username = fuerbringer
-  signingkey = 557C2E894148E0B4
+  name = fuerbringer
+  signingkey = 7266908A17FDD464D0B04E86557C2E894148E0B4
+
 [core]
   editor = vim
 [diff]
@@ -13,3 +16,5 @@
   browser = firefox
 [commit]
   gpgsign = true
+[gpg]
+  program = gpg2
