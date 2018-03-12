@@ -55,6 +55,9 @@ set undodir=~/.vim/tempfiles/undo
 
 map <C-n> :NERDTreeToggle<CR>
 
+map <C-l> :tabnext<CR>
+map <C-h> :tabprevious<CR>
+
 " I like pain (it's to get rid of some of my bad Vim habits)
 let g:hardtime_default_on = 1
 let g:list_of_normal_keys = ["-", "+", "<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
