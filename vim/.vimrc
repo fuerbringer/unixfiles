@@ -54,7 +54,6 @@ set dir=~/.vim/tempfiles/swap
 set undodir=~/.vim/tempfiles/undo
 
 map <C-n> :NERDTreeToggle<CR>
-
 map <C-l> :tabnext<CR>
 map <C-h> :tabprevious<CR>
 
@@ -67,4 +66,4 @@ let g:list_of_visual_keys = ["-", "+", "<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
 let g:rainbow_active = 0
 
 " Notes
-" let g:notes_directories = ['/hdd/sync/documents/notes']
+let g:notes_directories = ['/hdd/sync/documents/notes']
