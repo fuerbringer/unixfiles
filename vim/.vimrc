@@ -2,7 +2,7 @@ set nocompatible
 
 " Pathogen
 execute pathogen#infect()
-colorscheme default
+colorscheme SerialExperimentsLain
 filetype indent on
 filetype plugin on
 set autoread
@@ -62,6 +62,9 @@ map <C-h> :tabprevious<CR>
 let g:hardtime_default_on = 1
 let g:list_of_normal_keys = ["-", "+", "<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
 let g:list_of_visual_keys = ["-", "+", "<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
+
+" luochen1990/rainbow
+let g:rainbow_active = 0
 
 " Notes
 " let g:notes_directories = ['/hdd/sync/documents/notes']

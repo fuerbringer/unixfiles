@@ -28,3 +28,9 @@
 [submodule "vim/.vim/bundle/vim-nix"]
 	path = vim/.vim/bundle/vim-nix
 	url = https://github.com/LnL7/vim-nix.git
+[submodule "vim/.vim/bundle/SerialExperimentsLain"]
+	path = vim/.vim/bundle/SerialExperimentsLain
+	url = git@github.com:lu-ren/SerialExperimentsLain.git
+[submodule "vim/.vim/bundle/rainbow"]
+	path = vim/.vim/bundle/rainbow
+	url = git@github.com:luochen1990/rainbow.git
