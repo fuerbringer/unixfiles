@@ -53,6 +53,16 @@ set backupdir=~/.vim/tempfiles/backup
 set dir=~/.vim/tempfiles/swap
 set undodir=~/.vim/tempfiles/undo
 
+" Maths expression conceals
+syntax match Conceal "lambda" conceal cchar=λ
+syntax match Conceal "sum" conceal cchar=∑
+syntax match Conceal "sqrt" conceal cchar=√
+syntax match Conceal "xor" conceal cchar=⊕
+syntax match Conceal "pi" conceal cchar=π
+hi! def link Conceal Normal
+set conceallevel=2
+set concealcursor=n
+
 map <C-n> :NERDTreeToggle<CR>
 map <C-l> :tabnext<CR>
 map <C-h> :tabprevious<CR>
