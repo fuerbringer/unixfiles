@@ -42,7 +42,7 @@ set ai
 set si
 set wrap
 
-set number
+set relativenumber number
 
 set noerrorbells
 set novisualbell
