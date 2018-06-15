@@ -30,11 +30,12 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 (defvar severin/packages
-  '(evil evil-surround org))
+  '(evil evil-surround org linum-relative))
 (dolist (p severin/packages)
   (when (not (package-installed-p p))
     (package-install p)))
 
+; Use package evil
 (require 'evil)
 (setq evil-want-C-u-scroll t)
 (evil-mode 1)
@@ -48,6 +49,10 @@
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agenda)
 (setq org-log-done t)
+
+; Use package linum-relative
+(require 'linum-relative)
+(linum-relative-global-mode)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
