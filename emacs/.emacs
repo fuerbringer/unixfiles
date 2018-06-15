@@ -1,18 +1,22 @@
+; Swap super and meta
+(setq  x-meta-keysym 'super
+       x-super-keysym 'meta)
+
 ; No borders and bars
 (tool-bar-mode 0)
 (menu-bar-mode 0)
 (when window-system
-    (scroll-bar-mode -1))
+  (scroll-bar-mode -1))
 
 ; Disable bells and such
 (when (fboundp 'blink-cursor-mode)
-    (blink-cursor-mode -1))
+  (blink-cursor-mode -1))
 (setq ring-bell-function 'ignore)
 
 ; Org evaluation languages
 (org-babel-do-load-languages
- 'org-babel-load-languages
- '((calc . t)))
+  'org-babel-load-languages
+  '((calc . t)))
 
 ; Evil mode package
 (add-to-list 'load-path "~/.emacs.d/evil")
