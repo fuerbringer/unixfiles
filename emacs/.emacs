@@ -13,6 +13,8 @@
   (blink-cursor-mode -1))
 (setq ring-bell-function 'ignore)
 
+(electric-pair-mode 1)
+
 ; Org evaluation languages
 (org-babel-do-load-languages
   'org-babel-load-languages
@@ -20,9 +22,7 @@
 
 ; Set up package manager
 (require 'package)
-(dolist (source '(("marmalade" . "http://marmalade-repo.org/packages/")
-		  ("elpa" . "http://tromey.com/elpa/")
-		  ("melpa" . "http://melpa.milkbox.net/packages/")))
+(dolist (source '(("melpa-stable" . "https://stable.melpa.org/packages/")))
   (add-to-list 'package-archives source t))
 (package-initialize)
 
