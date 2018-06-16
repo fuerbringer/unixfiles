@@ -43,12 +43,3 @@
 [submodule "vim/.vim/bundle/vim-coffee-script"]
 	path = vim/.vim/bundle/vim-coffee-script
 	url = git@github.com:kchmck/vim-coffee-script.git
-[submodule "emacs/.emacs.d/evil"]
-	path = emacs/.emacs.d/evil
-	url = https://github.com/emacs-evil/evil.git
-[submodule "emacs/.emacs.d/evil-surround"]
-	path = emacs/.emacs.d/evil-surround
-	url = https://github.com/emacs-evil/evil-surround.git
-[submodule "emacs/.emacs.d/org-mode"]
-	path = emacs/.emacs.d/org-mode
-	url = https://code.orgmode.org/bzg/org-mode.git
