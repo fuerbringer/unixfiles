@@ -30,7 +30,7 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 (defvar severin/packages
-  '(evil evil-surround org linum-relative color-theme-sanityinc-tomorrow smart-tabs-mode))
+  '(evil evil-surround org linum-relative color-theme-sanityinc-tomorrow smart-tabs-mode nix-mode))
 (dolist (p severin/packages)
   (when (not (package-installed-p p))
     (package-install p)))
