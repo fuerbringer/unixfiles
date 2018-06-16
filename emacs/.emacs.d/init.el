@@ -1,3 +1,6 @@
+
+;;; General editor
+
 ;Swap super and meta
 (setq  x-meta-keysym 'super
        x-super-keysym 'meta)
@@ -19,6 +22,10 @@
 (org-babel-do-load-languages
   'org-babel-load-languages
   '((calc . t)))
+
+
+
+;;; Package related
 
 ; Set up package manager
 (require 'package)
@@ -58,6 +65,10 @@
 (require 'pretty-mode)
 (global-pretty-mode t)
 
+
+
+;;; Font related
+
 (pretty-deactivate-groups
  '(:equality :ordering :ordering-double :ordering-triple
              :arrows :arrows-twoheaded :punctuation
@@ -68,7 +79,13 @@
 
 (global-prettify-symbols-mode 1)
 
+; Use package smart-tabs-mode
+(setq indent-tabs-mode t)
+
+
+
 ;;; Fira code ligature workaround
+
 ;; This works when using emacs --daemon + emacsclient
 (add-hook 'after-make-frame-functions (lambda (frame) (set-fontset-font t '(#Xe100 . #Xe16f) "Fira Code Symbol")))
 ;; This works when using emacs without server/client
@@ -200,9 +217,8 @@
 (add-hook 'prog-mode-hook
           #'add-fira-code-symbol-keywords)
 
-; Use package smart-tabs-mode
-(setq indent-tabs-mode t)
-
+
+;;; Custom variables and ones set through `customize-*`
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
