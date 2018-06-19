@@ -29,7 +29,8 @@
 
 ; Set up package manager
 (require 'package)
-(dolist (source '(("melpa-stable" . "https://stable.melpa.org/packages/")))
+(dolist (source '(("gnu" . "https://elpa.gnu.org/packages/")
+                  ("melpa" . "https://melpa.org/packages/")))
   (add-to-list 'package-archives source t))
 (package-initialize)
 
