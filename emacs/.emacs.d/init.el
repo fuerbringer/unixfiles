@@ -2,8 +2,8 @@
 ;;; General editor
 
 ;Swap super and meta
-(setq  x-meta-keysym 'super
-       x-super-keysym 'meta)
+(setq x-meta-keysym 'super
+      x-super-keysym 'meta)
 
 ; No borders and bars
 (tool-bar-mode 0)
@@ -17,6 +17,14 @@
 (setq ring-bell-function 'ignore)
 
 (electric-pair-mode 1)
+
+(setq
+   backup-by-copying t
+   backup-directory-alist '(("." . "~/.emacs-saves/"))
+   delete-old-versions t
+   kept-new-versions 5
+   kept-old-versions 1
+   version-control t)
 
 ; Org evaluation languages
 (org-babel-do-load-languages
@@ -38,7 +46,7 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 (defvar severin/packages
-  '(evil evil-surround org linum-relative color-theme-sanityinc-tomorrow smart-tabs-mode nix-mode pretty-mode))
+  '(evil evil-surround evil-org org linum-relative color-theme-sanityinc-tomorrow smart-tabs-mode nix-mode pretty-mode))
 (dolist (p severin/packages)
   (when (not (package-installed-p p))
     (package-install p)))
@@ -51,6 +59,9 @@
 ; Use package evil-surround
 (require 'evil-surround)
 (global-evil-surround-mode 1)
+
+; Use package evil-org
+(require 'evil-org)
 
 ; Use package org-mode
 (require 'org)
