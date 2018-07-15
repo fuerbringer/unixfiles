@@ -46,7 +46,7 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 (defvar severin/packages
-  '(evil evil-surround evil-org org linum-relative color-theme-sanityinc-tomorrow smart-tabs-mode nix-mode pretty-mode))
+  '(evil evil-surround evil-org org linum-relative color-theme-sanityinc-tomorrow haskell-mode smart-tabs-mode nix-mode pretty-mode))
 (dolist (p severin/packages)
   (when (not (package-installed-p p))
     (package-install p)))
@@ -68,6 +68,9 @@
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agenda)
 (setq org-log-done t)
+
+; Use package haskell-mode
+(require 'haskell-mode)
 
 ; Use package linum-relative
 (require 'linum-relative)
