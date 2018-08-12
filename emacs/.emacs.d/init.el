@@ -26,11 +26,6 @@
    kept-old-versions 1
    version-control t)
 
-; Org evaluation languages
-(org-babel-do-load-languages
-  'org-babel-load-languages
-  '((calc . t)))
-
 
 
 ;;; Package related
@@ -68,6 +63,13 @@
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agenda)
 (setq org-log-done t)
+(setq org-src-fontify-natively t)
+
+; Org evaluation languages
+(org-babel-do-load-languages
+  'org-babel-load-languages
+  '((calc . t)
+    (sh . t)))
 
 ; Use package haskell-mode
 (require 'haskell-mode)
