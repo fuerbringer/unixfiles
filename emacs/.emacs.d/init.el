@@ -41,7 +41,7 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 (defvar severin/packages
-  '(evil evil-surround evil-org org linum-relative color-theme-sanityinc-tomorrow haskell-mode smart-tabs-mode nix-mode pretty-mode))
+  '(evil evil-surround evil-org org linum-relative color-theme-sanityinc-tomorrow haskell-mode smart-tabs-mode markdown-mode nix-mode pretty-mode))
 (dolist (p severin/packages)
   (when (not (package-installed-p p))
     (package-install p)))
@@ -73,6 +73,11 @@
 
 ; Use package haskell-mode
 (require 'haskell-mode)
+
+(autoload 'markdown-mode "markdown-mode"
+   "Major mode for editing Markdown files" t)
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
 ; Use package linum-relative
 (require 'linum-relative)
