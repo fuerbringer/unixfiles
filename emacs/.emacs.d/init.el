@@ -18,6 +18,8 @@
 
 (electric-pair-mode 1)
 
+(setq-default tab-width 2)
+
 (setq
    backup-by-copying t
    backup-directory-alist '(("." . "~/.emacs-saves/"))
@@ -92,5 +94,12 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(js-indent-level 2)
  '(org-agenda-files (quote ("~/org")))
  '(package-selected-packages (quote (evil))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
