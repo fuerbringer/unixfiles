@@ -28,12 +28,6 @@
 [submodule "vim/.vim/bundle/vim-nix"]
 	path = vim/.vim/bundle/vim-nix
 	url = https://github.com/LnL7/vim-nix.git
-[submodule "vim/.vim/bundle/SerialExperimentsLain"]
-	path = vim/.vim/bundle/SerialExperimentsLain
-	url = git@github.com:lu-ren/SerialExperimentsLain.git
-[submodule "vim/.vim/bundle/rainbow"]
-	path = vim/.vim/bundle/rainbow
-	url = git@github.com:luochen1990/rainbow.git
 [submodule "vim/.vim/bundle/vim-notes"]
 	path = vim/.vim/bundle/vim-notes
 	url = git@github.com:xolox/vim-notes.git
@@ -43,3 +37,4 @@
 [submodule "vim/.vim/bundle/vim-coffee-script"]
 	path = vim/.vim/bundle/vim-coffee-script
 	url = git@github.com:kchmck/vim-coffee-script.git
+

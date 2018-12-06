@@ -2,7 +2,7 @@ set nocompatible
 
 " Pathogen
 execute pathogen#infect()
-colorscheme SerialExperimentsLain
+colorscheme elflord
 filetype indent on
 filetype plugin on
 set autoread
@@ -56,14 +56,6 @@ set undodir=~/.vim/tempfiles/undo
 map <C-n> :NERDTreeToggle<CR>
 map <C-l> :tabnext<CR>
 map <C-h> :tabprevious<CR>
-
-" I like pain (it's to get rid of some of my bad Vim habits)
-let g:hardtime_default_on = 1
-let g:list_of_normal_keys = ["-", "+", "<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
-let g:list_of_visual_keys = ["-", "+", "<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
-
-" luochen1990/rainbow
-let g:rainbow_active = 0
 
 " Notes
 let g:notes_directories = ['~/sync/documents/notes']
