@@ -1,3 +1,9 @@
 vim/.vim/tempfiles/swap/*
 vim/.vim/tempfiles/backup/*
 vim/.vim/tempfiles/undo/*
+emacs/.emacs.d/auto-save-list/
+emacs/.emacs.d/eshell/
+emacs/.emacs.d/network-security.data
+emacs/.emacs.d/tutorial/
+emacs/.emacs.d/url/
+
