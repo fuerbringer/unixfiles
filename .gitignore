@@ -6,4 +6,7 @@ emacs/.emacs.d/eshell/
 emacs/.emacs.d/network-security.data
 emacs/.emacs.d/tutorial/
 emacs/.emacs.d/url/
+newsboat/.newsboat/cache.db
+newsboat/.newsboat/history.cmdline
+newsboat/.newsboat/history.search
 

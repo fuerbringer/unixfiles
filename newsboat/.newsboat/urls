@@ -1,9 +1,13 @@
 https://news.ycombinator.com/rss Hacker News
 https://nixos.org/news-rss.xml NixOS News
 https://nixos.org/blogs.xml NixOS Blogs
+https://weekly.nixos.org/feeds/all.rss.xml
 https://discourse.nixos.org/c/learn.rss
 https://www.gnu.org/software/guix/feeds/blog.atom Guix
 https://lukesmith.xyz/rss.xml Luke Smith
 https://notrelated.libsyn.com/rss Not Related
+https://fsfe.org/events/events.en.rss
 https://fsfe.org/news/news.en.rss FSFE
 http://www.haskellforall.com/feeds/posts/default
+https://open.kattis.com/rss/new-problems
+https://fuerbringer.info/rss.xml
