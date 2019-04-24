@@ -1,13 +1,6 @@
+source $HOME/.vim/snippets.vim
+
 set nocompatible
-
-" Pathogen
-execute pathogen#infect()
-colorscheme elflord
-filetype indent on
-filetype plugin on
-syntax enable
-syntax on
-
 set autoread
 set background=dark
 set encoding=utf-8
@@ -40,3 +33,19 @@ set dir=~/.vim/tempfiles/swap
 set undodir=~/.vim/tempfiles/undo
 
 map <C-n> :NERDTreeToggle<CR>
+
+colorscheme elflord
+filetype indent on
+filetype plugin on
+syntax enable
+syntax on
+
+call plug#begin()
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'tpope/vim-surround'
+Plug 'jiangmiao/auto-pairs'
+Plug 'lnl7/vim-nix'
+Plug 'vimoutliner/vimoutliner'
+call plug#end()
+ 
