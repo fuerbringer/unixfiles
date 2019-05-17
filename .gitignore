@@ -11,4 +11,6 @@ emacs/.emacs.d/url/
 newsboat/.newsboat/cache.db
 newsboat/.newsboat/history.cmdline
 newsboat/.newsboat/history.search
+newsboat/.newsboat/cache.db.lock
+vim/.vim/autoload/plug.vim.old
 
