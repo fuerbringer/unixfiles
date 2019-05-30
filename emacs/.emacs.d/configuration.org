@@ -1,9 +1,9 @@
-#+TITLE: Emacs Configuration
+	+TITLE: Emacs Configuration
 #+AUTHOR: Severin Fürbringer
 #+OPTIONS: toc:nil num:nil
 
 * Configure =use-package=
-
+  
 #+BEGIN_SRC emacs-lisp
   (require 'use-package-ensure)
   (setq use-package-always-ensure t)
@@ -14,16 +14,102 @@ Always compile packages, and use the newest version available.
 #+BEGIN_SRC emacs-lisp
   (use-package auto-compile
     :config (auto-compile-on-load-mode))
-
   (setq load-prefer-newer t)
 #+END_SRC
-* Editor settings
+** Evil mode
+
+Taint Emacs with evil influence.
+
+#+BEGIN_SRC emacs-lisp
+  (use-package evil
+    :ensure t
+    :defer nil
+    :init
+    (setq evil-want-keybinding nil)
+    (setq evil-want-C-u-scroll t)
+    :config
+    (evil-mode 1))
+#+END_SRC
+
+** Switch-window
+
+Switch window is a neat package because instead of having to painstakingly do C - x o until you're in the window you want  to edit, you can just do C - x o and pick the one you want to move to according to the letter it is assigned to
+
+#+BEGIN_SRC emacs-lisp
+  (use-package switch-window
+	:ensure t
+	:defer t
+	:config
+	(setq switch-window-input-style 'minibuffer)
+	(setq switch-window-increase 4)
+	(setq switch-window-threshold 2)
+	(setq switch-window-shortcut-style 'qwerty)
+	(setq switch-window-qwerty-shortcuts
+		  '("a" "s" "d" "f" "j" "k" "l"))
+	:bind
+	([remap other-window] . switch-window))
+#+END_SRC
+** Ido and Ido-vertical
+
+For the longest time I used the default way of switching and killing buffers in Emacs. Same for finding files. Ido-mode made these three tasks IMMENSELY easier and more intuitive. Please not that I still use the default way M - x works because I believe all you really need for it is which-key
+
+#+BEGIN_SRC emacs-lisp
+  (setq ido-enable-flex-matching nil)
+  (setq ido-create-new-buffer 'always)
+  (setq ido-everywhere t)
+  (ido-mode 1)
+
+  (use-package ido-vertical-mode
+	:ensure t
+	:init
+	(ido-vertical-mode 1))
+  (setq ido-vertical-define-keys 'C-n-and-C-p-only)
+#+END_SRC
+* Editor
 ** Enable line numbers
 #+BEGIN_SRC emacs-lisp
   (global-linum-mode t)
 #+END_SRC
-* Keyboard mapping
-** Use OS key as meta key
+** Show parent parens
 #+BEGIN_SRC emacs-lisp
-  (setq x-meta-keysym 'super x-super-keysym 'meta)
+  (show-paren-mode 1)
+#+END_SRC
+** Indentation
+#+BEGIN_SRC emacs-lisp
+  (setq-default tab-width 2)
+  (setq-default standard-indent 2)
+  (setq c-basic-offset tab-width)
+  (setq-default electric-indent-inhibit t)
+  (setq-default indent-tabs-mode t)
+  (setq backward-delete-char-untabify-method 'nil)
+#+END_SRC
+** Enable bracket pair-matching
+#+BEGIN_SRC emacs-lisp
+  (setq electric-pair-pairs '(
+							 (?\{ . ?\})
+							 (?\( . ?\))
+							 (?\[ . ?\])
+							 (?\" . ?\")
+							))
+  (electric-pair-mode t)
+#+END_SRC
+** Creating a new window switches your cursor to it
+#+BEGIN_SRC emacs-lisp
+  (defun split-and-follow-horizontally ()
+	(interactive)
+	(split-window-below)
+	(balance-windows)
+	(other-window 1))
+  (global-set-key (kbd "C-x 2") 'split-and-follow-horizontally)
+
+  (defun split-and-follow-vertically ()
+	(interactive)
+	(split-window-right)
+	(balance-windows)
+	(other-window 1))
+  (global-set-key (kbd "C-x 3") 'split-and-follow-vertically)
+#+END_SRC
+** Transform yes-or-no questions into y-or-n
+#+BEGIN_SRC emacs-lisp
+  (defalias 'yes-or-no-p 'y-or-n-p)
 #+END_SRC
