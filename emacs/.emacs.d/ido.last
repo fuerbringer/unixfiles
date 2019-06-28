@@ -1,0 +1,84 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/severin/git/textboard/" . "src/")
+ ("/home/severin/" . ".emacs.d/")
+ ("/home/" . "severin/")
+ ("/" . "home/")
+ ("/home/severin/git/bma/" . "thesis/")
+ ("/home/severin/git/unixfiles/" . "emacs/")
+ ("/home/severin/git/kattis-solutions/" . "epigdanceoff/")
+ ("/home/severin/git/" . "bma/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/severin/.emacs.d/"
+ "/home/severin/git/bma/thesis/"
+ "/home/severin/git/unixfiles/emacs/.emacs.d/"
+ "/home/severin/git/textboard/src/"
+ "/tmp/literate-devops-demo/"
+ "/tmp/"
+ "/"
+ "/home/severin/git/bma/src/"
+ "/home/severin/git/Witchmacs/"
+ "/home/severin/git/kattis-solutions/epigdanceoff/"
+ "/home/severin/git/kattis-solutions/veci/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "configuration.org"
+ "abstract.tex"
+ "init.el"
+ "theory.tex"
+ "realisation.tex"
+ "posts.c"
+ "presentation.pdf"
+ "presentation.org"
+ "hello.sh"
+ "test.org"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/severin/.emacs.d/" (23803 55924 776362 744000) "ido.last" "init.el" "url/" ".gitignore" "network-security.data" "ido.last~" "elpa/" "configuration.org" "configuration.el" "./" "../" "auto-save-list/" "eshell/")
+
+ ("/home/severin/git/unixfiles/emacs/.emacs.d/" (23803 55834 727478 151000) "ido.last" "init.el" "url/" ".gitignore" "network-security.data" "ido.last~" "elpa/" "configuration.org" "configuration.el" "./" "../" "auto-save-list/" "eshell/")
+
+ ("/home/severin/git/bma/thesis/" (23803 55564 989384 271000) "_region_.tex" "README.md" "bibliography.tex" "bma.lof" ".gitignore" "prv_realisation.log" "bma.pdf" "conclusion.tex" "abstract.tex" "realisation.tex" "titlepage.tex" "introduction.tex" "images/" "theory.log" "./" "#realisation.tex#" "bma.tex" "extra.tex" "build" "../" "bma_teil_adrian.tex" "watch" "theory.tex" "_region_.log")
+
+ ("/home/severin/" (23803 35403 965053 187000) "2019-05-30-151916_831x1013_scrot.png" "#.newsrc-dribble#" "2019-06-02-225353_590x99_scrot.png" "2019-05-19-171420_663x163_scrot.png" "2019-05-30-192601_1362x746_scrot.png" ".cache/" ".bash_history" "git/" "2019-05-30-164622_273x239_scrot.png" ".muttrc" "2019-05-28-140953_159x715_scrot.png" "org/" "2019-05-19-163315_781x232_scrot.png" ".lesshst" ".newsrc" ".newsrc-dribble" "vimwiki_html/" ".vimrc" ".offlineimap/" "2019-05-21-134721_380x643_scrot.png" "2019-05-18-213316_650x86_scrot.png" "2019-05-19-170520_510x311_scrot.png" ".ssh/" ".zshrc" "Desktop/" "2019-05-21-094636_498x210_scrot.png" "2019-05-18-211314_421x77_scrot.png" ".moc/" "2019-05-30-175839_769x328_scrot.png" "2019-05-22-201450_799x406_scrot.png" ".dbus/" ".npm/" ".authinfo" ".notmuch-config" ".irssi/" ".lynxrc" ".spacemacs" ".elfeed/" "2019-05-24-161024_660x437_scrot.png" ".fehbg" ".compose-cache/" ".newsboat/" ".viminfo" "2019-05-23-165026_527x121_scrot.png" ".esd_auth" ".zcompdump-carbon-brick-5.7.1" "2019-05-31-181114_1274x234_scrot.png" "2019-05-21-191128_534x363_scrot.png" ".xsession-errors.old" "2019-05-24-174613_661x58_scrot.png" ".nix-profile/" "2019-06-02-164657_1071x920_scrot.png" ".nix-defexpr/" ".newsrc.eld" "2019-05-24-092408_1212x239_scrot.png" "2019-06-02-001108_721x687_scrot.png" ".wget-hsts" ".thunderbird/" ".dmrc" ".config/" "2019-06-04-225740_678x209_scrot.png" ".zcompdump-carbon-brick-5.6.2" ".local/" ".gitconfig" "2019-05-23-164017_505x134_scrot.png" "2019-06-02-154306_477x124_scrot.png" "2019-05-29-173212_662x157_scrot.png" "2019-05-21-114714_855x142_scrot.png" ".tldrc/" "2019-05-21-104120_525x83_scrot.png" "2019-05-19-172239_671x62_scrot.png" ".msmtprc" "2019-06-02-151340_967x749_scrot.png" "Sync/" ".zcompdump" ".mozilla/" ".vim/" "2019-06-06-222658_1037x275_scrot.png" "2019-05-31-225309_522x147_scrot.png" ".gnupg/" ".offlineimaprc" ".emacs.d/" "2019-05-21-132946_256x76_scrot.png" "2019-05-19-164117_549x148_scrot.png" "Documents/" "2019-05-30-192615_451x118_scrot.png" "2019-05-23-195146_763x62_scrot.png" ".mutt/" "Mail/" "2019-06-02-154521_792x461_scrot.png" ".surf/" ".mail/" "2019-06-02-152850_733x731_scrot.png" ".w3m/" "News/" "2019-05-29-182644_784x127_scrot.png" "./" ".calcurse/" "../" ".zsh_history" "2019-05-19-212212_989x218_scrot.png" "2019-06-02-200818_1111x364_scrot.png" ".xsession-errors" "Downloads/" ".newsrc-dribble~" ".node_repl_history" ".bashrc" "mnt/" ".Xauthority" "2019-06-02-150904_1798x585_scrot.png" "sync/")
+
+ ("/home/severin/git/textboard/src/" (23777 43814 99144 509000) "posts.h" "posts.c" "helpers.h" "helpers.c" "config.h" "handler.c" "server.c" "static.h" "./" "../" "database.c" "database.h")
+
+ ("/home/severin/git/textboard/" (23777 43963 881479 324000) ".gitattributes" "README.md" "LICENSE" ".gitignore" "Makefile" "Dockerfile" "static/" "src/" "enquote.py" "./" "../" ".git/")
+
+ ("/tmp/" (23802 63976 542446 547000) "literate-devops-demo/" ".XIM-unix/" "test.org" "firefox_severin/" "Temp-76ee0bcc-970a-4da2-8f0a-494f8bf2f4eb/" ".#test.org" ".X11-unix/" ".X0-lock" ".ICE-unix/" "systemd-private-e794839601d44f04a767425a44fd644f-rtkit-daemon.service-tdz6f6/" ".Test-unix/" "hello.sh" "c4b098221e7b39c6c2e64745c24e6a64-{87A94AB0-E370-4cde-98D3-ACC110C5967D}" "tmp-cx4.xpi" "docview1000/" "systemd-private-e794839601d44f04a767425a44fd644f-systemd-timesyncd.service-EDznUi/" "mozilla_severin0/" ".font-unix/" "Temp-68e1eb3e-3628-438e-9b0e-97ec7546adf1/" ".esd-1000/" "./" "../" "systemd-private-e794839601d44f04a767425a44fd644f-cups.service-4uTpXM/" "babel-TJKDgh/" "tmp-n8y.xpi" "#test.org#")
+
+ ("/tmp/literate-devops-demo/" (23802 63697 944975 611000) "LICENSE" "presentation.pdf" "sprint-fuzzy-bunny.org" "example-code-lit.md" "presentation.tex" "README.org" "example-code-lit.png" ".#presentation.org" "literate-programming-tangling.png" ".gitignore" "title-screen.org" ".git/" "presentation-notes.org" "example-code-norm.rb" "presentation.org" "literate-devops-demo.el" "tramp-url-1.png" "Reporter/" "#presentation.org#" "./" "../" "example-code-norm.png")
+
+ ("/home/severin/git/bma/src/" (23793 45304 975397 571000) "preset-grids.js" "helper.js" "index.js" "ui.js" "maze.js" "pathfinding.js" "maze-helper.js" "./" "../" "grid.js" "config.js")
+
+ ("/home/severin/git/bma/" (23780 11906 317895 513000) "bin/" "presentation/" "README.md" ".eslintrc.json" "views/" "package.json" "webpack.config.js" "Procfile" ".travis.yml" "test/" "routes/" ".gitignore" "thesis/" "Dockerfile" "package-lock.json" ".gitmodules" "public/" "src/" "node_modules/" "docs/" "./" "../" "app.js" ".git/" "LICENSE.md")
+
+ ("/home/severin/git/kattis-solutions/veci/" (23791 62389 281221 640000) "#solution.cpp#" "solution.cpp" "./" "../")
+
+ ("/home/severin/git/kattis-solutions/epigdanceoff/" (23791 62617 362797 356000) "Makefile" "epigdanceoff" "dance.cpp" "#dance.cpp#" "epigdanceoff.c" "./" "../")
+
+ ("/home/severin/git/Witchmacs/" (23793 15069 500667 821000) "Witchmacs-theme.el" "init.el" "README.md" "config.org" "marivector.png" "Witcheat.org" "gnumarisa.png" "snippets/" "./" "../" ".git/")
+
+ ("/home/" (23705 10623 254159 292000) "lost+found/" "tax/" "severin/" "./" "../")
+
+ ("/home/severin/git/unixfiles/emacs/" (23639 20920 412320 920000) ".emacs.d/" "./" "../")
+
+ ("/home/severin/git/unixfiles/" (23791 48237 563077 695000) "git/" "zsh/" "README.md" "LICENSE" "bash/" "moc/" ".gitignore" "ssh/" "npm/" "newsboat/" "vim/" "screenshot.png" ".gitmodules" "i3/" "./" "../" "emacs/" ".git/")
+
+ ("/home/severin/git/" (23792 173 385083 808000) "bma/" "textboard/" "kattis-solutions/" "unixfiles/" "fuerbringer.info/" "is-your-waifu-legal/" "./" "../" "Witchmacs/" "nixfiles/")
+
+ ("/home/severin/git/kattis-solutions/" (23774 58476 798673 905000) "different/" "server/" "timeloop/" "fizzbuzz/" "measurement/" "helpaphd/" "carrots/" "karte/" "LICENSE" "piglatin/" "parsinghex/" "veci/" "batterup/" "epigdanceoff/" "quickbrownfox/" "quadrantselection/" "pathtracing/" "leftbeehind/" "faktor/" "fallingapart/" "helloworld/" "README.org" "./" "../" "aboveaverage/" ".git/" "statistics/" "easiest/" "metaprogramming/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

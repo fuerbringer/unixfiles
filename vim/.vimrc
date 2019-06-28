@@ -46,6 +46,5 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
 Plug 'lnl7/vim-nix'
-Plug 'vimoutliner/vimoutliner'
 call plug#end()
  

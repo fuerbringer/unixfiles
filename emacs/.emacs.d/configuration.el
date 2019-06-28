@@ -38,6 +38,8 @@
       (ido-vertical-mode 1))
 (setq ido-vertical-define-keys 'C-n-and-C-p-only)
 
+
+
 (global-linum-mode t)
 
 (show-paren-mode 1)
@@ -72,3 +74,5 @@
 (global-set-key (kbd "C-x 3") 'split-and-follow-vertically)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
+
+(org-babel-do-load-languages 'org-babel-load-languages '((shell . t)))

@@ -1,4 +1,4 @@
-	+TITLE: Emacs Configuration
+#+TITLE: Emacs Configuration
 #+AUTHOR: Severin Fürbringer
 #+OPTIONS: toc:nil num:nil
 
@@ -65,6 +65,9 @@ For the longest time I used the default way of switching and killing buffers in 
 	(ido-vertical-mode 1))
   (setq ido-vertical-define-keys 'C-n-and-C-p-only)
 #+END_SRC
+
+#+BEGIN_SRC emacs-lisp
+#+END_SRC
 * Editor
 ** Enable line numbers
 #+BEGIN_SRC emacs-lisp
@@ -112,4 +115,9 @@ For the longest time I used the default way of switching and killing buffers in 
 ** Transform yes-or-no questions into y-or-n
 #+BEGIN_SRC emacs-lisp
   (defalias 'yes-or-no-p 'y-or-n-p)
+#+END_SRC
+
+* org-mode
+#+BEGIN_SRC emacs-lisp
+(org-babel-do-load-languages 'org-babel-load-languages '((shell . t)))
 #+END_SRC
