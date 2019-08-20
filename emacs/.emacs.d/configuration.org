@@ -80,7 +80,9 @@ For the longest time I used the default way of switching and killing buffers in 
 ** Theme
 #+BEGIN_SRC emacs-lisp 
   (use-package zenburn-theme :ensure t)
-
+	(setq zenburn-scale-org-headlines t)
+	(setq zenburn-scale-outline-headlines t)
+	(setq zenburn-use-variable-pitch t)
 #+END_SRC
 * Editor
 ** Enable line numbers

@@ -43,7 +43,8 @@
  '(package-selected-packages
 	 (quote
 		(evil-surround use-package switch-window ido-vertical-mode evil auto-compile auctex)))
- '(pdf-view-midnight-colors (quote ("#b2b2b2" . "#292b2e"))))
+ '(pdf-view-midnight-colors (quote ("#b2b2b2" . "#292b2e")))
+ '(zenburn-scale-org-headlines t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

@@ -48,6 +48,9 @@
 
 
 (use-package zenburn-theme :ensure t)
+      (setq zenburn-scale-org-headlines t)
+      (setq zenburn-scale-outline-headlines t)
+      (setq zenburn-use-variable-pitch t)
 
 (global-linum-mode t)
 
