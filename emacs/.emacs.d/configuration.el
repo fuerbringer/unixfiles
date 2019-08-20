@@ -6,13 +6,20 @@
 (setq load-prefer-newer t)
 
 (use-package evil
+	      :ensure t
+	      :defer nil
+	      :init
+	      (setq evil-want-keybinding nil)
+	      (setq evil-want-C-u-scroll t)
+	      :config
+	      (evil-mode 1))
+(use-package evil-surround
   :ensure t
-  :defer nil
-  :init
-  (setq evil-want-keybinding nil)
-  (setq evil-want-C-u-scroll t)
   :config
-  (evil-mode 1))
+  (global-evil-surround-mode 1))
+
+(dolist (mode '(dired-mode)) 
+  (add-to-list 'evil-emacs-state-modes mode))
 
 (use-package switch-window
       :ensure t

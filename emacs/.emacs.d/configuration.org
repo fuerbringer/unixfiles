@@ -21,14 +21,23 @@ Always compile packages, and use the newest version available.
 Taint Emacs with evil influence.
 
 #+BEGIN_SRC emacs-lisp
-  (use-package evil
+	(use-package evil
+		:ensure t
+		:defer nil
+		:init
+		(setq evil-want-keybinding nil)
+		(setq evil-want-C-u-scroll t)
+		:config
+		(evil-mode 1))
+  (use-package evil-surround
     :ensure t
-    :defer nil
-    :init
-    (setq evil-want-keybinding nil)
-    (setq evil-want-C-u-scroll t)
     :config
-    (evil-mode 1))
+    (global-evil-surround-mode 1))
+#+END_SRC
+
+#+BEGIN_SRC emacs-lisp
+  (dolist (mode '(dired-mode)) 
+    (add-to-list 'evil-emacs-state-modes mode))
 #+END_SRC
 
 ** Switch-window
