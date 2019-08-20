@@ -47,6 +47,8 @@
 
 
 
+(use-package zenburn-theme :ensure t)
+
 (global-linum-mode t)
 
 (show-paren-mode 1)

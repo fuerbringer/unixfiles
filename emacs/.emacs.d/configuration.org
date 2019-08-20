@@ -77,6 +77,11 @@ For the longest time I used the default way of switching and killing buffers in 
 
 #+BEGIN_SRC emacs-lisp
 #+END_SRC
+** Theme
+#+BEGIN_SRC emacs-lisp 
+  (use-package zenburn-theme :ensure t)
+
+#+END_SRC
 * Editor
 ** Enable line numbers
 #+BEGIN_SRC emacs-lisp
@@ -125,7 +130,6 @@ For the longest time I used the default way of switching and killing buffers in 
 #+BEGIN_SRC emacs-lisp
   (defalias 'yes-or-no-p 'y-or-n-p)
 #+END_SRC
-
 * org-mode
 #+BEGIN_SRC emacs-lisp
 (org-babel-do-load-languages 'org-babel-load-languages '((shell . t)))
