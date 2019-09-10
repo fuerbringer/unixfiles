@@ -1,8 +1,5 @@
 [user]
-#  email = severin@protonmail.ch
-#  signingkey = 557C2E894148E0B4
-
-  email = severin@protonmail.ch
+  email = severin@fuerbringer.info
   name = fuerbringer
   signingkey = 7266908A17FDD464D0B04E86557C2E894148E0B4
 
