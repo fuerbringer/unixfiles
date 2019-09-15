@@ -1,0 +1,17 @@
+[user]
+  email = severin@fuerbringer.info
+  name = fuerbsev
+  signingkey = 7266908A17FDD464D0B04E86557C2E894148E0B4
+
+[core]
+  editor = vim
+[diff]
+  tool = vimdiff
+[difftool]
+  prompt = false
+[web]
+  browser = firefox
+[commit]
+  gpgsign = true
+[gpg]
+  program = /usr/bin/gpg

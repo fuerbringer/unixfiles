@@ -1,0 +1,20 @@
+[user]
+  email = severin@fuerbringer.info
+  name = fuerbringer
+  signingkey = 7266908A17FDD464D0B04E86557C2E894148E0B4
+
+[includeIf "gitdir:~/git/zhaw/"]
+  path = ~/git/zhaw/.gitconfig
+
+[core]
+  editor = vim
+[diff]
+  tool = vimdiff
+[difftool]
+  prompt = false
+[web]
+  browser = firefox
+[commit]
+  gpgsign = true
+[gpg]
+  program = /usr/bin/gpg
